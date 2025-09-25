@@ -134,15 +134,7 @@ function addTaskFromStorage(text,completed){
     })
 
 
-    if(completed === true){
-    taskText.classList.add("line-through","text-gray-500");
-    // Eğer localStorage’da güncelleme yapmak istiyorsan:
-    let index = localStoreToDo.findIndex(t => t.text === text);
-    if(index !== -1){
-        localStoreToDo[index].completed = true;
-        localStorage.setItem("todos", JSON.stringify(localStoreToDo));
-    }
-}
+    
 
 //inputa girlren değerlerin ul ye li olarak ataması
     
