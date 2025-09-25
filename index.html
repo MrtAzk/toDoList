@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <main class="w-full max-w-lg p-6 bg-white rounded-2xl shadow-xl">
+    
+    <h1 class="text-3xl font-bold text-center mb-6 text-gray-700">Mert To-Do List</h1>
+    <div id="toast-container" class="fixed top-5 right-5 z-50 flex flex-col gap-2"></div>
+
+    
+    <!-- Input ve Buton -->
+    <div class="flex gap-4 mb-6">
+      <input type="text" id="input" class="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Yeni görev ekleyin">
+      <input type="button" value="Kayıt Ediniz" onclick="addTask()" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-700 active:scale-95 transition duration-200">
+    </div>
+
+    <!-- Görev Listesi -->
+    <ul id="taskList" class="flex flex-col gap-2">
+      <!-- JS ile görevler eklenecek -->
+    </ul>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
